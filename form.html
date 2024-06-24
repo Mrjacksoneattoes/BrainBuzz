@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" type="image/png" href="/image/Brain.png">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <div class="container">
+  <h1>Login Form</h1>
+  <form action="/quiz.html" class="login__form">
+    <div class="box">
+      <label for="username" class="label">Username :</label>
+      <div class="icon__input__box">
+        <i class="fa-solid fa-user icon"><img id="usernamei" src="/image/username.png" height="20" alt=""></i>
+        <input type="text" class="input" id="username" placeholder="username" />
+      </div>
+      <div class="error__msg"></div>
+    </div>
+    <div class="box">
+      <label for="password" class="label">Password :</label>
+      <div class="icon__input__box">
+        <i class="fa-solid fa-lock icon"><img src="/image/password.png" height="20" alt=""></i>
+        <input type="password" class="input" id="password" placeholder="password" />
+      </div>
+      <div class="error__msg"></div>
+    </div>
+    <button type="submit" class="login__btn">Login</button>
+  </form>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container {
+    background: #101820;
+    max-width: 30rem;
+    width: 90%;
+    padding: 2rem;
+    mask-image: linear-gradient(to bottom, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+    box-shadow:0 0 60px rgba(255,255,255);
+    mask-size: 100% 100%;
+    mask-position: 0% 0%;
+    -webkit-animation: slide-in-blurred-right 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-right 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+  @-webkit-keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) skewX(-30deg);
+      transform: translateX(1000px) skewX(-30deg);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) skewX(0);
+      transform: translateX(0) skewX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) skewX(-30deg);
+      transform: translateX(1000px) skewX(-30deg);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) skewX(0);
+      transform: translateX(0) skewX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes slide-in-blurred-left {
+    0% {
+      transform: translateX(-100%);
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    
+  }
+  
+  .login__form div:first-child {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    
+    
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 1.1rem;
+    font-weight: lighter;
+  }
+  
+  .input::placeholder {
+    font-size: 1.1rem;
+    color: #101820;
+    font-weight: lighter;
+  }
+  
+  .input {
+    padding: 1rem 2rem;
+    color: #101820;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    -webkit-animation: slide-in-blurred-left 1.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 1.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+  
+  .icon__input__box {
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    color: #101820;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.5rem;
+    
+  }
+  
+  .error__msg {
+    color: hsl(0, 100%, 66%);
+    font-size: 0.9rem;
+  }
+  
+  .login__btn {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: #fee715;
+    color: black;
+    transition: background-color 0.5s, transform .1s;
+    -webkit-animation: roll-in-bottom 0.9s ease-out both;
+    animation: roll-in-bottom 0.9s ease-out both;
+  }
+  .login__btn:hover{
+    background-color: #f6e971;
+  }
+
+  @-webkit-keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes roll-in-bottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
