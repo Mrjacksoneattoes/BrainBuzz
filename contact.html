@@ -32,29 +32,35 @@
                 <p id="con">Contact</p>
                 <p id="reach">Reach out to Brainbuzz for any questions or support.</p>
             </article>
-            <button id="message">Send message</button>
+            <a href="#name"><button  id="message">Send message</button></a>
         </div>
         <br>
         <div class="message">
             <article>
-                <p id="us">Contact us today</p>
-                <p id="need">Reach out to us using the form below. We are here to help with any questions or support you need.</p>
+                <p class="slide-in-blurred-right" id="us">Contact us today</p>
+                <p class="slide-in-blurred-right" id="need">Reach out to us using the form below. We are here to help with any questions or support you need.</p>
             </article>
             <form action="/index.html">
-                <label for="name">name</label><br>
-                <input type="text" id="name"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email"><br>
-                <label for="message">Message</label><br>
-                <input type="text" id="messages" >
+                <label class="slide-in-blurred-left" for="name">name</label><br>
+                <input class="slide-in-blurred-left" type="text" id="name"><br>
+                <span class="error__msg"></span>
+
+                <label class="slide-in-blurred-leftt" for="email">Email</label><br>
+                <input class="slide-in-blurred-left" type="text" id="email"><br>
+                <span class="error__msg"></span>
+
+                <label class="slide-in-blurred-left" for="message">Message</label><br>
+                <textarea class="slide-in-blurred-left" name="message" id="messages"></textarea>
+                <span class="error__msg"></span>
             </form><br>
-            <button>Submit</button>
-        </div>
+            <button class="slide-in-blurred-left" id="mysubmit">Submit</button>
+        </div> 
         <br>
-        <div class="discover">
+        <div class="slide-in-blurred-bottom" >
+            <img id="med" src="/image/medail.png" height="400" alt="">
             <article>
-                <p>discover your knowledge today</p>
-                <p>Join brainbuzz and challenge yourself with fun quizzes/p>
+                <p  id="di">discover your knowledge today</p>
+                <p  id="join">Join brainbuzz and challenge yourself with fun quizzes</p>
             </article>
             <button>start now</button>
         </div>
@@ -63,8 +69,10 @@
 
     <br>
     <footer>
-        <p>BrainBuzz</p>
+        <article>
+            <p>BrainBuzz</p>
         <p>all rights reserved&copy;2024</p>
+        </article>
     </footer>
 
     <script src="contact.js"></script>

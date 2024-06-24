@@ -30,15 +30,45 @@ body{
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 5%;
+    margin-left: 2%;
 }
 a{
     text-decoration: none;
 }
 
 header{
-    -webkit-animation: slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;   
+    -webkit-animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;  
 }
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-100px) scale(0.5);
+      transform: translateY(-100px) scale(0.5);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scale(1);
+      transform: translateY(0) scale(1);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-blurred-top {
+    0% {
+      transform: translateY(-100px) scale(0.5);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
   
 
 .contact{
@@ -46,7 +76,7 @@ header{
     position: relative;
     left: 10%;
     margin-top: -30%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     background: #F2CA2C;
     width: 800px;
     padding: 4%;
@@ -54,8 +84,8 @@ header{
     mask-image: linear-gradient(to right, rgba(255,0,0,1), rgba(255,255,255,0));
     mask-size: 100%, 100%;
     mask-position: 0% ,0%;
-    -webkit-animation: slide-in-blurred-right 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-right 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @-webkit-keyframes slide-in-blurred-right {
@@ -115,8 +145,8 @@ header{
     border: 5px solid #F2CA2C;
     cursor: pointer;
     border-radius: 7.5%;
-    -webkit-animation: roll-in-bottom 0.6s ease-out both;
-    animation: roll-in-bottom 0.6s ease-out both;
+    -webkit-animation: roll-in-bottom 0.8s ease-out both;
+    animation: roll-in-bottom 0.8s ease-out both;
 }
 @-webkit-keyframes roll-in-bottom {
     0% {
@@ -143,8 +173,8 @@ header{
 #reach{
     font-size: 20px;
     margin-top: -4%;
-    -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation: slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @-webkit-keyframes slide-in-blurred-left {
@@ -186,12 +216,219 @@ header{
  .message article{
     float:right;
     width: 650px;
+    margin-top: 5%;
  }
  #us{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
+ }
+ #need{
+    font-size: 25px;
+    font-weight: lighter;
  }
  form{
     font-size: 30px;
     padding: 3%;
  }
+ input{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 400px;
+   border-radius: 5%;
+   margin-top: 2%;
+   
+ }
+ label{
+    font-weight: bold;
+    border-bottom: 3px solid white;
+ }
+ #messages{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 400px;
+   border-radius: 5%;
+   margin-top: 2%;
+ }
+ #mysubmit{
+    width: 200px;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 25px;
+    font-weight:bold;
+    background-color: #161513;
+    color: #F6F5F4;
+    border: 5px solid #2C2A26;
+    cursor: pointer;
+    border-radius: 7.5%;
+    margin-left: 12%;
+    mask-image: linear-gradient(to left, rgba(255,0,0,1), rgba(255,255,255,0));
+    mask-size: 100% ,100%;
+    mask-position: 0% ,0%;
+    transition: background-color 0.3s, transform 0.5s;
+ }
+ #mysubmit:hover{
+    transform: scale(1.1);
+    background-color: #2C2A26;
+ }
+ .slide-in-blurred-left.in-view {
+    -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+  
+  @-webkit-keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes slide-in-blurred-left {
+    0% {
+      transform: translateX(-100%);
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+
+  .slide-in-blurred-right.in-view {
+    -webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+  
+  @-webkit-keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) skewX(-30deg);
+      transform: translateX(1000px) skewX(-30deg);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) skewX(0);
+      transform: translateX(0) skewX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) skewX(-30deg);
+      transform: translateX(1000px) skewX(-30deg);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) skewX(0);
+      transform: translateX(0) skewX(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .slide-in-blurred-bottom{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #F2CA2C;
+    padding: 3%;
+    border-radius: 3%;
+    mask-image: linear-gradient(to bottom, rgba(255,0,0,1), rgba(255,255,255,0));
+    mask-size: 100%, 100%;
+    mask-position: 0% ,0%;
+    margin-bottom: 5%;
+    
+  }
+
+#di{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: -1%;
+}
+#join{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: -1%;
+}
+#med{
+    position: absolute;
+    opacity: 7%;
+    margin-top: -5%;
+    filter: grayscale(100%);
+    margin-left: 6%;
+    mask-image: linear-gradient(to bottom, rgba(255,0,0,1), rgba(255,255,255,0));
+    mask-size: 100%, 100%;
+    mask-position: 0% ,0%;
+}
+.slide-in-blurred-bottom button{
+    width: 200px;
+    margin: 0 auto;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 1%;
+    font-size: 25px;
+    font-weight:bold;
+    background-color: #161513;
+    color: #F6F5F4;
+    border: 5px solid #F2CA2C;
+    cursor: pointer;
+    border-radius: 7.5%;
+}
+.slide-in-blurred-bottom.in-view {
+    -webkit-animation: slide-in-blurred-bottom 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-bottom 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+  
+  @-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes slide-in-blurred-bottom {
+    0% {
+      transform: translateY(100%);
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+footer{
+    font-size: 20px;
+    background: linear-gradient(to top,#161513, #2C2A26);
+    padding: 2%;
+    font-weight: lighter;
+    
+}
+footer article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
