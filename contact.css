@@ -389,6 +389,8 @@ header{
     border: 5px solid #F2CA2C;
     cursor: pointer;
     border-radius: 7.5%;
+    text-decoration: none;
+    
 }
 .slide-in-blurred-bottom.in-view {
     -webkit-animation: slide-in-blurred-bottom 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
