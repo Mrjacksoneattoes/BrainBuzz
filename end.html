@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
+    <!-- contianer -->
     <div class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore"></h1>
+        <!-- form -->
         <form>
           <input
             type="text"
@@ -19,12 +21,14 @@
             id="username"
             placeholder="username"
           />
+          <!-- save button -->
           <button
             type="submit"
             class="btn"
             id="saveScoreBtn"
             onclick="saveHighScore(event)"
             disabled
+        
           >
             Save
           </button>

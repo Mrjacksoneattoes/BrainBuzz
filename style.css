@@ -1,3 +1,4 @@
+/* body style */
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
@@ -9,6 +10,7 @@ header{
     background: #161513;
     padding: 5%;
 }
+/* styling the title of the website */
 #b{
     position: absolute;
     margin-top: -1%;
@@ -60,6 +62,7 @@ header{
   -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
 #challenge{
     font-weight: lighter;
 }
@@ -77,8 +80,113 @@ header{
     left: 91%;
     margin-top: 2%;
     padding-right: 1%;
+    
    
 }
+#s:hover{
+  -webkit-animation: vibrate-3 0.5s linear infinite both;
+	        animation: vibrate-3 0.5s linear infinite both;
+}
+/* ----------------------------------------------
+ 
+/**
+ * ----------------------------------------
+ * animation vibrate-3
+ * ----------------------------------------
+ */
+ @-webkit-keyframes vibrate-3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 #sa{
     color: black;
     font-weight: bold;
@@ -99,12 +207,13 @@ header{
     list-style: none;
     color: white;
 }
-
+/* styling the phrase where there is enhance */
 #enhance{
     font-size: 70px;
     font-weight: bold;
     
 }
+/* container */
 .first{
     margin-bottom: 3%;
     width: 850px;
@@ -113,7 +222,7 @@ header{
     padding: 5%;
     margin-top: -25%;
        
-
+/* styling the background-image of the .first container */
 }
 #tkt{
     position: absolute;
@@ -296,6 +405,7 @@ header{
     border-radius: 2%;
     margin-top: -5%;
 }
+/* image container one */
 #aze{
     margin-top: -5%;
     display: flex;
@@ -305,6 +415,7 @@ header{
     margin: 0 auto;  
     border-top: 5px solid white;
 }
+/* organizing the images */
 #img1{
     float: left;
     margin-left: 17%;
@@ -322,6 +433,7 @@ header{
     border-radius: 1%;
     filter: grayscale(100%);
 }
+/* image container 2 */
 #eza{
     display: flex;
     flex-direction: row;
@@ -349,6 +461,7 @@ header{
     filter: grayscale(100%);
 }
 
+
 .randomphrase{
     background-color: #2C2A26;
     color: white;
@@ -360,6 +473,7 @@ header{
   transition: opacity 0.5s; /* animation duration */
   font-weight: lighter;
 }
+/* animation while scrolling */
 .randomphrase.in-view{
     opacity: 1;
     -webkit-animation: roll-in-blurred-left 1.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
