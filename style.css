@@ -867,6 +867,7 @@ footer{
     left: 5%;
     width: 475px;
     height: 450px;
+    border-radius: 10%;
   }
   
 
@@ -878,7 +879,7 @@ footer{
   .services{
     position: relative;
     margin-top: 100%;
-    padding-bottom: 75%;
+    padding-bottom: 90%;
 
 
   }
@@ -901,4 +902,9 @@ footer{
  .about{
   width: 400px;
  }
+ .image2 img{
+  height: 300px;
+  border-radius: 5%;
+ }
+
 }
