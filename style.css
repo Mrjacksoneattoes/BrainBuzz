@@ -810,6 +810,10 @@ header{
     border: 5px solid #F2CA2C;
     cursor: pointer;
 }
+#starts:hover{
+  -webkit-animation: vibrate-3 0.5s linear infinite both;
+  animation: vibrate-3 0.5s linear infinite both;
+}
 footer{
     display: flex;
     flex-direction: column;
