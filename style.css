@@ -19,11 +19,12 @@ header{
     position: relative;
     margin-top: -5%;
     font-weight: lighter;
-    
-	-webkit-animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    /* animations */
+	-webkit-animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; 
 	        animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     
 }
+/* animations */
 @-webkit-keyframes slide-in-blurred-top {
   0% {
     -webkit-transform: translateY(-100px) scale(0.5);
@@ -40,6 +41,7 @@ header{
     opacity: 1;
   }
 }
+/* animations */
 
 @keyframes slide-in-blurred-top {
   0% {
@@ -53,7 +55,7 @@ header{
     opacity: 1;
   }
 }
-
+/* animations */
 .slide-in-blurred-top {
   -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -142,6 +144,7 @@ header{
 .bounce-in-top {
     animation: bounce-in-top 1.8s both; /* change the animation duration to 2 seconds */
   }
+  /* keyframes */
   @keyframes bounce-in-top {
     0% {
       transform: translateY(-500px);
@@ -178,6 +181,7 @@ header{
       animation-timing-function: ease-out;
     }
   }
+  /* animations */
   .roll-in-blurred-left {
     -webkit-animation: roll-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     animation: roll-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -198,7 +202,7 @@ header{
       opacity: 1;
     }
   }
-  
+/* keyframes */
   @keyframes roll-in-blurred-left {
     0% {
       -webkit-transform: translateX(-3000px) skewX(-30deg);
@@ -235,7 +239,7 @@ header{
       opacity: 1;
     }
   }
-  
+  /* keyframes */
   @keyframes roll-in-blurred-bottom {
     0% {
       -webkit-transform: translateY(3000px) skewY(-30deg);
@@ -705,6 +709,7 @@ footer{
 @media only screen and (max-width:576px){
   body{
     font-size: 15px ;
+    overflow-x: hidden;
   }
   #b{
     margin-left: 5%;

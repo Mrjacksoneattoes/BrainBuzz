@@ -434,3 +434,47 @@ footer article{
     flex-direction: column;
     align-items: center;
 }
+.error-message {
+  color: #FF0000; /* Rouge */
+  font-family: Arial, sans-serif; /* Police Arial */
+  font-size: 0.5em; /* Taille de police réduite */
+  font-weight: bold; /* Gras */
+  margin-bottom: 10px; /* Espacement en dessous du message */
+  font-weight: lighter;
+
+}
+@media only screen and (max-width:576px){
+    body{
+      font-size: 10px;
+      overflow-x:hidden;
+    }
+    .navbar{
+      margin-right: 10%;
+      margin-bottom: 20%;
+
+    }
+    .navbar li{
+      display: inline;
+      
+    }
+    .contact{
+      width: 250px;
+      position: absolute;
+      margin-top: -100%;
+    }
+    .message{
+      width: 500px;
+      margin: 0 auto;
+      margin-top: -15%;
+    }
+    .slide-in-blurred-right{
+      margin-left: 25%;
+      width: 400px;
+    }
+    #di{
+      width: 400px;
+    }
+    #join{
+      width: 400px;
+    }
+}
