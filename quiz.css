@@ -1,13 +1,10 @@
 :root {
     background-color: #101820;
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     
    
   }
- 
-
-
   
   * {
     box-sizing: border-box;

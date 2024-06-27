@@ -4,6 +4,7 @@ body {
     font-size: 25px;
     background-color: #161513;
     color: #FFFFFF;
+    overflow-x: hidden;
     
 }
 header{
